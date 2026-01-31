@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Heights | Luxury Residences</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AZURE<span>HEIGHTS</span></a>
+            <div class="nav-links">
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-button">Book Inquiry</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">/ RESIDENCES</h1>
+            <p class="hero-subtitle">The finest way to stay.</p>
+            <p class="hero-tagline">Where modern elegance meets timeless comfort.</p>
+            <a href="#rooms" class="cta-button">Discover Our Spaces</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-section" id="rooms">
+        <div class="section-header">
+            <h2>Curated Living Spaces</h2>
+            <p>Each residence is designed with intention, balancing aesthetics, functionality, and serenity.</p>
+        </div>
+
+        <div class="rooms-grid">
+            <!-- Room 1 -->
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="room-badge">Most Popular</span>
+                </div>
+                <div class="room-info">
+                    <h3>The Panorama Suite</h3>
+                    <p>Floor-to-ceiling windows offering breathtaking cityscape views. Features a king bedroom, spacious living area, and a marble ensuite.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                        <span><i class="fas fa-bed"></i> 1 King Bed</span>
+                        <span><i class="fas fa-maximize"></i> 650 sq ft</span>
+                    </div>
+                    <div class="room-footer">
+                        <span class="room-price">$349 <small>/ night</small></span>
+                        <button class="book-button" data-room="Panorama Suite">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 2 -->
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="room-badge">City View</span>
+                </div>
+                <div class="room-info">
+                    <h3>The Urban Loft</h3>
+                    <p>An open-concept loft with industrial-chic design elements. High ceilings, exposed beams, and a fully equipped kitchenette.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-user-friends"></i> 4 Guests</span>
+                        <span><i class="fas fa-bed"></i> 2 Queen Beds</span>
+                        <span><i class="fas fa-maximize"></i> 850 sq ft</span>
+                    </div>
+                    <div class="room-footer">
+                        <span class="room-price">$449 <small>/ night</small></span>
+                        <button class="book-button" data-room="Urban Loft">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 3 -->
+            <div class="room-card">
+                <div class="room-image" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                    <span class="room-badge">Premium</span>
+                </div>
+                <div class="room-info">
+                    <h3>The Skyline Penthouse</h3>
+                    <p>Ultimate luxury with a private terrace, hot tub, and dedicated concierge service. Includes two bedrooms, a formal dining area, and a library nook.</p>
+                    <div class="room-features">
+                        <span><i class="fas fa-user-friends"></i> 6 Guests</span>
+                        <span><i class="fas fa-bed"></i> 3 Bedrooms</span>
+                        <span><i class="fas fa-maximize"></i> 1800 sq ft</span>
+                    </div>
+                    <div class="room-footer">
+                        <span class="room-price">$899 <small>/ night</small></span>
+                        <button class="book-button" data-room="Skyline Penthouse">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy-section">
+        <div class="philosophy-container">
+            <div class="philosophy-content">
+                <h2>/ OUR PHILOSOPHY</h2>
+                <p class="philosophy-statement">Everything you need. <br>Nothing you don't.</p>
+                <p>We believe in intentional hospitality. Our spaces are meticulously curated to provide all the essentials for a seamless stay, while eliminating clutter and excess. It's a commitment to quality over quantity, to peace over noise, and to experiences over things.</p>
+                <div class="amenities-icons">
+                    <div class="amenity-icon">
+                        <i class="fas fa-wifi"></i>
+                        <p>High-Speed WiFi</p>
+                    </div>
+                    <div class="amenity-icon">
+                        <i class="fas fa-utensils"></i>
+                        <p>Gourmet Kitchen</p>
+                    </div>
+                    <div class="amenity-icon">
+                        <i class="fas fa-spa"></i>
+                        <p>Premium Toiletries</p>
+                    </div>
+                    <div class="amenity-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                        <p>24/7 Concierge</p>
+                    </div>
+                </div>
+            </div>
+            <div class="philosophy-image" style="background-image: url('https://images.unsplash.com/photo-1558036117-15e82a2c9a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <h2>/ FAQ</h2>
+            <p>Everything you need to know for a seamless and comfortable experience at Azure Heights.</p>
+        </div>
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    What are your check-in and check-out times?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Check-in is anytime after 3:00 PM, and check-out is by 11:00 AM. Early check-in and late check-out may be available upon request, subject to availability and an additional fee.</p>
+                </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is parking available on-site?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we offer valet parking for $45 per night. There are also several secure public parking garages within a one-block radius of our building.</p>
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you allow pets?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We love furry friends! We allow dogs up to 50 lbs with a non-refundable cleaning fee of $125 per stay. Please notify us in advance if you plan to bring a pet.</p>
+                </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is your cancellation policy?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Reservations canceled more than 7 days prior to arrival receive a full refund. Cancellations within 7 days are subject to a 50% fee. Please refer to your booking confirmation for specific policy details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-container">
+            <h2>Ready to Experience Azure Heights?</h2>
+            <p>Contact our reservations team to book your stay or to ask any further questions.</p>
+            <div class="cta-buttons">
+                <a href="mailto:reservations@azure-heights.com" class="cta-button primary">
+                    <i class="fas fa-envelope"></i> Send an Inquiry
+                </a>
+                <a href="tel:+15551234567" class="cta-button secondary">
+                    <i class="fas fa-phone"></i> Call +1 (555) 123-4567
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">AZURE<span>HEIGHTS</span></a>
+                <p>Redefining urban hospitality through intentional design and impeccable service.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <a href="#rooms">Residences</a>
+                    <a href="#amenities">Amenities</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Azure Heights Luxury Residences. All rights reserved. This is a conceptual demonstration website.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Booking -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h3>Availability Inquiry</h3>
+            <p id="modalRoomName">You are inquiring about: <strong>The Panorama Suite</strong></p>
+            <form id="inquiryForm">
+                <div class="form-group">
+                    <label for="guestName">Full Name *</label>
+                    <input type="text" id="guestName" required>
+                </div>
+                <div class="form-group">
+                    <label for="guestEmail">Email Address *</label>
+                    <input type="email" id="guestEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkIn">Check-in Date *</label>
+                    <input type="date" id="checkIn" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkOut">Check-out Date *</label>
+                    <input type="date" id="checkOut" required>
+                </div>
+                <div class="form-group">
+                    <label for="guestMessage">Additional Notes</label>
+                    <textarea id="guestMessage" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
